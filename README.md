@@ -2,10 +2,7 @@
 
 Sistema web simples de cadastro desenvolvido por mim utilizando **HTML, CSS e JavaScript**.
 
-O objetivo do projeto é demonstrar conhecimentos básicos em desenvolvimento web, organização de código e manipulação do DOM, sendo ideal para **portfólio de TI Júnior**, estágio ou áreas administrativas.
-
 ---
-
 ##  Funcionalidades
 
 - Cadastro de usuários
@@ -27,5 +24,4 @@ O objetivo do projeto é demonstrar conhecimentos básicos em desenvolvimento we
 ##  Como executar
 
 1. Baixe ou clone o repositório
-```bash
 
