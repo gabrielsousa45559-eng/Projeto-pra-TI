@@ -1,172 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Sistema de Cadastro</title>
+# 📋 Sistema Web de Cadastro
 
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-        }
+Sistema web simples de cadastro desenvolvido por mim utilizando **HTML, CSS e JavaScript**.
 
-        body {
-            background: linear-gradient(135deg, #2ecc71, #27ae60);
-            margin: 0;
-            padding: 40px;
-        }
+O objetivo do projeto é demonstrar conhecimentos básicos em desenvolvimento web, organização de código e manipulação do DOM, sendo ideal para **portfólio de TI Júnior**, estágio ou áreas administrativas.
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
+---
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
+## 🚀 Funcionalidades
 
-        form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
+- Cadastro de usuários
+- Validação de campos
+- Listagem em tabela
+- Exclusão de registros
+- Interface simples e organizada
 
-        form input {
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
+---
 
-        form button {
-            grid-column: span 2;
-            padding: 14px;
-            background: #27ae60;
-            color: #fff;
-            font-size: 18px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+## 🛠️ Tecnologias Utilizadas
 
-        form button:hover {
-            background: #219150;
-        }
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+---
 
-        table thead {
-            background: #2ecc71;
-            color: white;
-        }
+## ▶️ Como executar
 
-        table th, table td {
-            padding: 12px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
+1. Baixe ou clone o repositório
+```bash
+git clone https://github.com/seu-usuario/sistema-web-cadastro.git
 
-        table tr:hover {
-            background: #f1f1f1;
-        }
-
-        .btn-delete {
-            background: #e74c3c;
-            color: #fff;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        .btn-delete:hover {
-            background: #c0392b;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #888;
-            font-size: 14px;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="container">
-    <h1>Sistema de Cadastro</h1>
-
-    <form id="formCadastro">
-        <input type="text" id="nome" placeholder="Nome completo" required>
-        <input type="email" id="email" placeholder="E-mail" required>
-        <input type="text" id="telefone" placeholder="Telefone" required>
-        <button type="submit">Cadastrar</button>
-    </form>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody id="tabelaCadastros"></tbody>
-    </table>
-
-    <footer>
-        Sistema Web de Cadastro • HTML + CSS + JavaScript
-    </footer>
-</div>
-
-<script>
-    const form = document.getElementById("formCadastro");
-    const tabela = document.getElementById("tabelaCadastros");
-
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("email").value;
-        const telefone = document.getElementById("telefone").value;
-
-        if (!nome || !email || !telefone) {
-            alert("Preencha todos os campos!");
-            return;
-        }
-
-        const linha = document.createElement("tr");
-
-        linha.innerHTML = `
-            <td>${nome}</td>
-            <td>${email}</td>
-            <td>${telefone}</td>
-            <td>
-                <button class="btn-delete" onclick="removerLinha(this)">
-                    Excluir
-                </button>
-            </td>
-        `;
-
-        tabela.appendChild(linha);
-        form.reset();
-    });
-
-    function removerLinha(botao) {
-        botao.closest("tr").remove();
-    }
-</script>
-
-</body>
-</html>
