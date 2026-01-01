@@ -1,4 +1,4 @@
-# 📋 Sistema Web de Cadastro
+#  Sistema Web de Cadastro
 
 Sistema web simples de cadastro desenvolvido por mim utilizando **HTML, CSS e JavaScript**.
 
@@ -6,7 +6,7 @@ O objetivo do projeto é demonstrar conhecimentos básicos em desenvolvimento we
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - Cadastro de usuários
 - Validação de campos
@@ -16,7 +16,7 @@ O objetivo do projeto é demonstrar conhecimentos básicos em desenvolvimento we
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - HTML5
 - CSS3
@@ -24,9 +24,8 @@ O objetivo do projeto é demonstrar conhecimentos básicos em desenvolvimento we
 
 ---
 
-## ▶️ Como executar
+##  Como executar
 
 1. Baixe ou clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/sistema-web-cadastro.git
 
